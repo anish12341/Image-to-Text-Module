@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|center_vertical">
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center_horizontal|center_vertical">
+
+
+        <ImageView android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+        <TextView android:id="@+id/ocr"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Run OCR"
+            android:background="#b04023"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+
+    <TextView android:id="@+id/crop"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Crop image"
+        android:background="#a05670"
+        android:gravity="center"
+        android:layout_alignParentRight="true"/>
+
+
+
+
+    <Button android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Photo"
+        android:layout_weight="1"/>
+</LinearLayout>
